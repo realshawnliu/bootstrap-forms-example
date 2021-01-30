@@ -15,10 +15,10 @@ class Migration(migrations.Migration):
             name='Person',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=130)),
-                ('email', models.EmailField(blank=True, max_length=254)),
-                ('job_title', models.CharField(blank=True, max_length=30)),
-                ('bio', models.TextField(blank=True)),
+                ('domain', models.CharField(max_length=130)),
+                ('keyword', models.TextField(blank=True, max_length=130)),
+                ('start_date', models.TextField(blank=True, max_length=130)),
+                ('end_date', models.TextField(blank=True)),
             ],
         ),
     ]

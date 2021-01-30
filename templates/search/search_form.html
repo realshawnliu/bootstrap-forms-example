@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<form method="post" novalidate>
+  {% csrf_token %}
+  <div class="row">
+    <div class="col-6">
+      {{ form.domain|as_crispy_field }}
+    </div>
+    <div class="col-6">
+      {{ form.keyword|as_crispy_field }}
+    </div>
+  </div>
+  {{ form.start_date|as_crispy_field }}
+  {{ form.end_date|as_crispy_field }}
+  <button type="submit" class="btn btn-success">Search</button>
+</form>
+{% endblock %}

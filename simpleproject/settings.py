@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     'crispy_forms',
 
-    'people',
+    'search',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +126,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+DATE_INPUT_FORMATS = ['%d-%m-%Y']
